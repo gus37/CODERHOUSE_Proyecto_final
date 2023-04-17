@@ -1,0 +1,605 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0px 0px 10px #FFffFF;
+}
+
+body {
+    background-image: url(img/01-index/bg-index/02-bg-index.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #20010dca;
+}
+
+/* FUENTES
+
+font-family: 'Shadows Into Light', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+/* barra de navegación */
+
+/* PAGINAS DEL INDEX */
+
+/* VARIOS */
+h1 {
+    font-size: 30px;
+    padding: 3vh;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+h2 {
+    font-size: 20px;
+    padding: 3vh;
+}
+
+span {
+    color: white;
+}
+
+img,
+video {
+    box-shadow: 0 0 50px white;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 0;
+    z-index: 100;
+}
+
+/* DISEÑO DE TODOS LOS CONTENEDORES */
+
+.container {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #851e4394;
+    margin-bottom: 10px;
+}
+
+/* LOGO DEL NAV */
+.logo-nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+}
+
+.logo-nav-container ul {
+    filter: drop-shadow(0px 0px 10px white);
+    box-shadow: none;
+}
+
+.logo-nav-container img {
+    filter: drop-shadow(0px 0px 10px white);
+    box-shadow: none;
+}
+
+/* AUDIO DEL NAV */
+.audio {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.audio audio {
+    float: right;
+    /* max-width: 230px; */
+}
+
+.audio p {
+    text-align: center;
+    font-size: 15px;
+    text-shadow: 0px 0px 2px #FFffFF;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.747);
+}
+
+/* BOTONES DEL NAV */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 0 5px;
+    color: black;
+    transition: all 0.4s linear;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+nav ul li a:hover {
+    border-bottom: 5px solid #a20a5b;
+    color: #a20a5b;
+}
+
+/* PRINCIPAL */
+
+main {
+    padding-top: 6rem;
+}
+
+/* INICIO */
+.inicio {
+    background: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 80vh;
+}
+
+.inicio img {
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+
+}
+
+/* BIOGRAFIA INDEX*/
+.bio {
+    background-image: radial-gradient(circle, rgba(60, 7, 60, 0.256) 0%, rgba(195, 30, 232, 0.397) 100%), url(img/01-index/bg-bio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.detallebio p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.fotobio {
+    float: left;
+    padding: 3vh;
+    filter: drop-shadow(0px 0px 10px white);
+}
+
+/* TOUR INDEX */
+.tour {
+    background-image: radial-gradient(circle, rgba(80, 5, 84, 0.418) 0%, rgba(26, 7, 22, 0.7) 100%), url(img/bg-tour/fondo-tour.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.tour h1 {
+    color: white;
+}
+
+.tour-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tour-fotos a,
+h3 {
+    display: block;
+    text-decoration: none;
+}
+
+/* DISCOGRAFIA INDEX */
+.discosind {
+    background-image: radial-gradient(circle, rgba(95, 11, 100, 0.138) 0%, rgba(214, 20, 175, 0.775) 100%), url(img/discografía/bg-discografia/fondo-index-discografia.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.discostapas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.discostapas p {
+    display: block;
+    text-align: center;
+}
+
+.escuchardiscos,
+.masfotos {
+    display: flex;
+    justify-content: center;
+}
+
+.tour-fotos a,
+.escuchardiscos a,
+.masfotos a,
+.masvideos a,
+.escuchamas a {
+    text-decoration: none;
+    text-shadow: 0 0 10px white;
+    font-family: 'Shadows Into Light', cursive;
+    padding-bottom: 10px;
+}
+
+.tour-fotos a:hover,
+.escuchardiscos a:hover,
+.masfotos a:hover,
+.masvideos a:hover,
+.escuchamas a:hover {
+    transition: all 0.4s linear;
+    transform: scale(1.15);
+}
+
+.escuchardiscos a img,
+.masfotos a img,
+.masvideos a img,
+.escuchamas a img {
+    box-shadow: none;
+}
+
+.escuchardiscos a span,
+.masfotos a span,
+.masvideos a span {
+    display: block;
+}
+
+/* FOTOS INDEX */
+.fotosinic {
+    background-image: radial-gradient(circle, rgba(227, 39, 234, 0.222) 0%, rgba(63, 71, 221, 0.572) 100%), url(img/galeria-fotos/bg-galfotos/fondo-index-galeria-fotos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* VIDEOS INDEX */
+.videosinic {
+    background-image: radial-gradient(circle, rgba(44, 6, 44, 0.669) 0%, rgba(198, 49, 209, 0.603) 100%), url(img/bg-videos/fondo-index-videos.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.masvideos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ACTUACIONES INDEX */
+.contenido-seccion {
+    background-image: radial-gradient(circle, rgba(94, 14, 121, 0.471) 0%, rgba(92, 84, 212, 0.659) 100%), url(img/actuaciones/bg-actuaciones/bg-actuaciones.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 70%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+}
+
+.contenido-seccion .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenido-seccion .galeria .fotosactuaciones {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.contenido-seccion .galeria .fotosactuaciones img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    border: 1px #FF0099 solid;
+}
+
+.contenido-seccion .galeria .fotosactuaciones .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(218, 99, 184, 0.733), rgba(101, 13, 89, 0.615));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.contenido-seccion .galeria .fotosactuaciones .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+    font-size: 18px;
+}
+
+.contenido-seccion .galeria .fotosactuaciones .overlay:hover {
+    opacity: 1;
+}
+
+.contenido-seccion .galeria .fotosactuaciones .overlay:hover h3 {
+    margin-bottom: 0px;
+}
+
+/* FOOTER */
+
+.contenedorfooter {
+    position: fixed;
+    background: blanchedalmond;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: #851e4394;
+    height: auto;
+}
+
+.copy p {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.siguemeyredes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.siguemeyredes span {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.redes {
+    padding: 0 10px;
+}
+
+.redes img {
+    filter: drop-shadow(0px 0px 10px white);
+    margin: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.172);
+    border-radius: 30%;
+}
+
+/* PAGINAS HTML */
+
+/* DISCOGRAFIA HTML */
+.discografiahtml {
+    background-image: radial-gradient(circle, rgba(60, 7, 60, 0.166) 0%, rgba(99, 8, 120, 0.397) 100%), url(img/discografía/bg-discografia/fondo-discografia.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 5vh;
+}
+
+.introdisco p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.listarep {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.listarep iframe {
+    width: 250px;
+    padding: 10px;
+}
+
+.escuchamas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.escuchamas p {
+    padding: 20px;
+}
+
+.escuchamas img {
+    padding: 5px;
+}
+
+/* FOTOS, VIDEOS Y CONTACTO HTML */
+.fotoshtml,
+.videoshtml {
+    /* background-image: radial-gradient(circle, rgba(60, 7, 60, 0.166) 0%, rgba(99, 8, 120, 0.397) 100%), url(img/galeria-fotos/bg-galfotos/fondo-galeria.jpg); */
+    background-color: #460217;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 5vh;
+}
+
+.fotoshtml h1,
+.videoshtml h1 {
+    background-color: #851e4435;
+}
+
+.fotos ul,
+.videos ul {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.fotos li,
+.videos li {
+    margin: 5px;
+}
+
+.videos ul li h2 {
+    text-align: center;
+    background-color: #851e4435;
+    padding: 0;
+}
+
+.fotos img {
+    width: 250px;
+    height: 250px;
+    box-shadow: none;
+}
+
+.videos video {
+    box-shadow: none;
+}
+
+/* MODAL FOTOS */
+.modal {
+    display: none;
+}
+
+.modal:target {
+    display: block;
+    position: fixed;
+    background: #4602187a;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.foto {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto a {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 50px;
+}
+
+.foto a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    border: 2px solid #460217;
+    ;
+    box-sizing: border-box;
+}
+
+.cerrar {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+    line-height: 25px;
+}
+
+/* CONTACTO */
+.contactohtml {
+    background-image: radial-gradient(circle, rgba(60, 7, 60, 0.484) 0%, rgba(100, 8, 120, 0.51) 100%), url(img/bg-contacto/fondo2-contacto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 5vh;
+    height: 80vh;
+    
+}
+.fondocontacto{
+    background-color: #460218c5;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+}
+.introcontacto, .formulario{
+    width: 40%;
+    padding: 20px;
+    margin-top: 5vh;
+}
+.introcontacto h1{
+    color: white;
+}
+.introcontacto p{
+    text-align: justify;
+    font-size: 30px;
+}
+form {
+    text-align: right;
+    padding-right: 20px;
+}
+input, textarea{
+    background-color: #a20a5b54;
+    color: white;
+    text-shadow: 0 0 5px white;
+    text-align: right;
+    font-size: 15px;
+    width: 60%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.btn{
+    width: auto;
+    background-color: #a20a5bbe;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
